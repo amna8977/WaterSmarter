@@ -6,7 +6,7 @@
 
 ## Overview
 
-**Water Smarter** is a student-friendly, browser-based project designed to help people understand:
+**Water Smarter** is a user-friendly, browser-based project designed to help people understand:
 
 * Why water conservation matters
 * Seasonal watering rules and restrictions
