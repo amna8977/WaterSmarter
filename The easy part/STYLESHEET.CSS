@@ -1,0 +1,80 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.navlinks{
+    background-color: skyblue;
+    color:antiquewhite;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+li{
+    padding: 10px;
+    border-bottom: 1px solid antiquewhite;
+}
+
+li:hover{
+    background-color: cornflowerblue;
+}
+.imagebanner{
+    background-image:url("../pictures/banner.png");
+    padding: 50px 0;
+    background-size:contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    
+}
+h2{
+    text-align: center;
+    color: black;
+    background-color: lightskyblue;
+}
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    background-size:cover;
+    background-color: lightskyblue;
+    color: black;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.Havefun{
+    text-align: center;
+    margin: 3px;
+}
+
+@media screen and (min-width: 700px) {
+    ul{
+            text-align: right;
+    }
+
+    li{
+            display: inline-block;
+            border-bottom: 0px;
+            border-left: 1px solid rgb(73, 14, 67);
+    }
+
+    .Hi{
+            width: 33%;
+            display: inline-block;
+            vertical-align: top;
+    }
+}
+html {
+    background: linear-gradient(to left , lightblue 0%, cornflowerblue 100%);
+}

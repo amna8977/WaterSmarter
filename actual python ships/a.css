@@ -1,0 +1,279 @@
+body {
+    min-height: 100vh;
+    background-color: linear-gradient(to left, lightblue 0%, cornflowerblue 100%);
+    padding: 0;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+.calendar {
+    width: 400px;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    padding: 20px;
+    background: antiquewhite;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.calendar-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-body th,
+.calendar-body td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid antiquewhite;
+}
+
+.calendar-body th {
+    background-color: antiquewhite;
+}
+
+.alarm-settings {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: antiquewhite;
+}
+
+.alarm-settings input[type="date"],
+.alarm-settings input[type="time"],
+.alarm-settings input[type="text"] {
+    padding: 8px;
+    border: 1px solid ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.alarm-settings button {
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+html {
+    background: linear-gradient(to left, lightblue 0%, cornflowerblue 100%);
+}
+
+@media screen and (min-width: 700px) {
+    ul {
+        text-align: right;
+    }
+
+    li {
+        display: inline-block;
+        border-bottom: 0px;
+        border-left: 1px solid rgb(73, 14, 67);
+    }
+
+    .Hi {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.navlinks {
+    background-color: skyblue;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid antiquewhite;
+}
+
+li:hover {
+    background-color: cornflowerblue;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.alarm-dot {
+    position: relative;
+    /* Needed for absolute positioning of the dot */
+}
+
+.alarm-dot::after {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    top: 5px;
+    /* Adjust as needed */
+    right: 5px;
+    /* Adjust as needed */
+    width: 5px;
+    /* Size of the dot */
+    height: 5px;
+    /* Size of the dot */
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+}
+
+.alarm-dot {
+    position: relative;
+    /* Needed for absolute positioning of the dot */
+}
+
+.alarm-dot::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .navlinks ul {
+        text-align: center;
+    }
+
+    .navlinks li {
+        display: block;
+        border-left: none;
+        /* remove border on small screens */
+        margin: 5px 0;
+    }
+
+    .calendar-header {
+        flex-direction: column;
+    }
+
+    .calendar-header button {
+        margin: 5px;
+    }
+        .alarm-settings label,
+        .alarm-settings input[type="date"],
+        .alarm-settings input[type="time"],
+        .alarm-settings input[type="text"],
+        .alarm-settings select,
+        .alarm-settings button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    
+        .alarm-settings button {
+            background-color: cornflowerblue;
+            color: antiquewhite;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    
+        html {
+            background: linear-gradient(to left, lightblue 0%, cornflowerblue 100%);
+        }
+    
+        .navlinks {
+            background-color: skyblue;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    
+        .navlinks ul {
+            padding: 0;
+            margin: 0;
+        }
+    
+        .navlinks li {
+            display: inline-block;
+            padding: 10px;
+            border-bottom: none;
+            /* Remove bottom border */
+        }
+                .alarm-settings {
+                    width: 90%;
+                    /* Adjust width for smaller screens */
+                    max-width: 400px;
+                    margin-top: 20px;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    background: antiquewhite;
+                    box-sizing: border-box;
+                    /* Ensure padding doesn't affect width */
+                }
+        
+        
+                .navlinks li:hover {
+                    background-color: cornflowerblue;
+                }
+        
+                .alarm-dot {
+                    position: relative;
+                }
+        
+                .alarm-dot::after {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: red;
+                    border-radius: 50%;
+                    display: block;
+                }
+}
