@@ -81,7 +81,7 @@ You can later insert photos such as:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5**
 * **CSS3**
