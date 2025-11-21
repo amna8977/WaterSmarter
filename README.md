@@ -28,12 +28,6 @@ This page introduces the urgency of water conservation with real examples:
 * Lake Tahoe’s limited capacity
 * Nevada’s delicate ecosystems
 
-You can later add images/screenshots such as:
-
-* Water level comparison
-* Ecosystem visuals
-* Conservation infographic
-
 ---
 
 ### 2️ **Water Laws & Rules** (`index copy.html`)
@@ -73,11 +67,6 @@ Users can select a plant (Rose, Cactus, Orchid, Tulip), pick a date & time, and 
 
 > “Time to water the cactus!”
 
-You can later insert photos such as:
-
-* Calendar UI
-* Alarm setting panel
-* Example reminder popup
 
 ---
 
